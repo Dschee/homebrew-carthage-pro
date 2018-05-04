@@ -1,8 +1,11 @@
 class CarthagePro < Formula
   desc "Decentralized dependency manager for Cocoa, Pro Version."
   homepage "https://github.com/Dschee/Carthage"
-  url "https://github.com/Dschee/Carthage/archive/1.0.0.tar.gz"
-  sha256 "9ec243726bb86e65037adb2d222eb596236e34bbaadb55e36c2c4cfd2bc4f6df"
+  url "https://github.com/Dschee/Carthage.git",
+      :tag => "1.0.0",
+      :revision => "cd87e8650a0dbcbaa8a037ee4b3e05929fdafb45",
+      :shallow => false
+  head "https://github.com/Dschee/Carthage.git", :shallow => false
 
   depends_on :xcode => ["9.0", :build]
 
